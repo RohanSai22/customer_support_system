@@ -1,0 +1,25 @@
+{
+  "name": "@repo/db",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts",
+    "./schema": "./src/schema/index.ts"
+  },
+  "scripts": {
+    "generate": "drizzle-kit generate",
+    "push": "drizzle-kit push",
+    "studio": "drizzle-kit studio",
+    "seed": "bun run src/seed.ts"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^0.10.1",
+    "drizzle-orm": "^0.36.4",
+    "postgres": "^3.4.5"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.28.1",
+    "@types/bun": "latest",
+    "@faker-js/faker": "^9.4.0"
+  }
+}
