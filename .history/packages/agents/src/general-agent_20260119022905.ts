@@ -40,7 +40,7 @@ If a customer asks about orders or billing, politely suggest they might get bett
 
     try {
       const { text, usage } = await generateText({
-        model: google("gemini-2.5-flash"),
+        model: google("gemini-2.5-flash-lite"),
         system: this.SYSTEM_PROMPT,
         messages: [
           ...messages.map((m) => ({

@@ -45,7 +45,7 @@ Provide a brief summary (max 200 words):`;
 
     try {
       const { text } = await generateText({
-        model: google("gemini-2.5-flash"),
+        model: google("gemma-3-27b"),
         prompt: summaryPrompt,
         maxTokens: 300,
       });

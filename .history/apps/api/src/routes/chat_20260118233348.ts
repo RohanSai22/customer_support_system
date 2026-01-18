@@ -183,7 +183,7 @@ chatRouter.post("/stream", rateLimiter, async (c) => {
 
     // Stream response
     const result = streamText({
-      model: google("gemini-2.5-flash-lite"),
+      model: google("gemini-3-flash-preview"),
       system: systemPrompt,
       messages: [
         ...history.reverse().map((m) => ({

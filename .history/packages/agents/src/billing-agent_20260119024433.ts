@@ -134,7 +134,6 @@ When responding:
             },
           }),
         },
-        maxSteps: 3,
         maxTokens: 1000,
       });
 

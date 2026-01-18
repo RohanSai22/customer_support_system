@@ -25,7 +25,6 @@ app.use(
 app.route("/health", healthRouter);
 app.route("/api/chat", chatRouter);
 app.route("/api/conversations", conversationsRouter);
-app.route("/api/users", usersRouter);
 
 // 404 handler
 app.notFound((c) => c.json({ error: "Not found" }, 404));

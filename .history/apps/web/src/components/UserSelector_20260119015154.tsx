@@ -23,13 +23,13 @@ export function UserSelector({ onSelectUser }: UserSelectorProps) {
       try {
         setLoading(true);
         const response = await fetch(
-          `${process.env.NEXT_PUBLIC_API_URL || "http://localhost:3001"}/api/users`,
+          `${process.env.NEXT_PUBLIC_API_URL || "http://localhost:3001"}/api/users`
         );
-
+        
         if (!response.ok) {
           throw new Error("Failed to fetch users");
         }
-
+        
         const data = await response.json();
         setUsers(data.users || []);
       } catch (err) {

@@ -44,7 +44,7 @@ When responding:
     try {
       const { text, toolCalls, usage, experimental_providerMetadata } =
         await generateText({
-          model: google("gemini-2.5-flash", {
+          model: google("gemma-3-27b", {
             structuredOutputs: false,
           }),
           system: this.SYSTEM_PROMPT,
@@ -107,7 +107,6 @@ When responding:
               },
             }),
           },
-          maxSteps: 3,
           maxTokens: 1000,
         });
 
