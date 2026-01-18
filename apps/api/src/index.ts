@@ -38,7 +38,7 @@ const port = parseInt(process.env.PORT || "3001");
 
 const server = Bun.serve({
   port,
-  hostname: '0.0.0.0',
+  hostname: "0.0.0.0",
   fetch: app.fetch,
 });
 
