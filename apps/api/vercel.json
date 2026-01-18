@@ -1,0 +1,11 @@
+{
+  "build": {
+    "env": {
+      "NODE_ENV": "production"
+    }
+  },
+  "env": {
+    "GOOGLE_GENERATIVE_AI_API_KEY": "@google_api_key",
+    "DATABASE_URL": "@database_url"
+  }
+}
